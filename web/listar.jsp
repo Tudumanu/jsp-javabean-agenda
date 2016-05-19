@@ -45,7 +45,7 @@
     } else {
 %>
 
-    <h3>Não existem contatos cadastrados...</h3>
+    <h2>Não existem contatos cadastrados...</h2>
 
 <%
     }
