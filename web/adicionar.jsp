@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="contato" scope="page" class="tadeu.agenda.ContatoBean" />
 <jsp:useBean id="dados" scope="request" class="tadeu.agenda.DadosBean" />
 

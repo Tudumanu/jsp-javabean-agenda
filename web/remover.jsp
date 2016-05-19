@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="dados" scope="request" class="tadeu.agenda.DadosBean" />
 
 <%
@@ -12,7 +13,7 @@
         <label>Id: </label><input type="text" name="id" /> <br/>
 
         <br />
-        <input type="submit" value="Remover" />
+        <input type="submit" value="Remover"/>
     </fieldset>
 </form>
 

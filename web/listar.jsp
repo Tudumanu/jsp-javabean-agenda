@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
 <%@ page import="tadeu.agenda.*" %>
 <jsp:useBean id="dados" scope="request" class="tadeu.agenda.DadosBean" />
