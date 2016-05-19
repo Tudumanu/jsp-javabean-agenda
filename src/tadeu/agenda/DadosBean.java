@@ -19,15 +19,14 @@ public class DadosBean {
     }
 
     public void adicionarContato(ContatoBean c) {
-        String sql = "INSERT INTO contato(id, nome, telefone, email) " +
-                "VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO contato(nome, telefone, email) " +
+                "VALUES (?, ?, ?)";
 
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, c.getId());
-            preparedStatement.setString(2, c.getNome());
-            preparedStatement.setString(3, c.getTelefone());
-            preparedStatement.setString(4, c.getEmail());
+            preparedStatement.setString(1, c.getNome());
+            preparedStatement.setString(2, c.getTelefone());
+            preparedStatement.setString(3, c.getEmail());
             preparedStatement.executeUpdate();
             preparedStatement.close();
         } catch (Exception e) {
